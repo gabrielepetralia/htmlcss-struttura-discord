@@ -27,9 +27,14 @@ header .container{
   background-color: #e78152;
 }
 
+header .logo{
+  border: 1px dashed black;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
+  border: 1px dashed black;
 }
 
 header nav ul li {
@@ -45,6 +50,10 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+header .login {
+  border: 1px dashed black;
+}
+
 header .login a {
   color: black;
   text-decoration: none;
@@ -53,6 +62,14 @@ header .login a {
 /* MAIN */
 main section {
   padding: 115px 0;
+}
+
+main section .jumbotron {
+  height: 350px;
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #7e3717;
 }
 
 main section:nth-child(even) {
@@ -71,12 +88,11 @@ main section:first-child {
   background-color: #2d369c;
 }
 
-main section .jumbotron {
-  height: 350px;
-  width: 40%;
-  min-width: 300px;
-  margin: 0 auto;
-  background-color: #e78152;
+main section:last-child .container .row {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(148, 241, 86);
+  border: 1px dashed black;
 }
 
 .row .col-img {
