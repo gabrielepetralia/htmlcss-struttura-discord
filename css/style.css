@@ -9,11 +9,11 @@
   display: flex;
   align-items: center;
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* HEADER */
-header{
+header {
   background-color: #404EED;
   padding: 30px 0;
 }
@@ -43,7 +43,23 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.login a{
+.login a {
   color: black;
   text-decoration: none;
+}
+
+/* MAIN */
+main section {
+  padding: 115px 0;
+}
+
+main section:first-child {
+  background-color: #2d369c;
+}
+
+main section .jumbotron {
+  height: 350px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #e78152;
 }
