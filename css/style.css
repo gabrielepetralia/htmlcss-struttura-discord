@@ -15,6 +15,19 @@
   margin: 0 auto;
 }
 
+.logo {
+  border: 1px dashed black;
+}
+
+.btn {
+  border: 1px dashed black;
+}
+
+.btn a{
+  color: black;
+  text-decoration: none;
+}
+
 /* HEADER */
 header {
   background-color: #404EED;
@@ -24,11 +37,7 @@ header {
 header .container{
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #e78152;
-}
-
-header .logo{
-  border: 1px dashed black;
+  background-color: lightsalmon;
 }
 
 header nav ul {
@@ -50,15 +59,6 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-header .login {
-  border: 1px dashed black;
-}
-
-header .login a {
-  color: black;
-  text-decoration: none;
-}
-
 /* MAIN */
 main section {
   padding: 115px 0;
@@ -69,7 +69,7 @@ main section .jumbotron {
   width: 40%;
   min-width: 300px;
   margin: 0 auto;
-  background-color: #7e3717;
+  background-color: lightcoral;
 }
 
 main section:nth-child(even) {
@@ -85,13 +85,13 @@ main section:nth-child(odd) .container {
 }
 
 main section:first-child {
-  background-color: #2d369c;
+  background-color: lightblue;
 }
 
 main section:last-child .container .row {
   height: 300px;
   width: 100%;
-  background-color: rgb(148, 241, 86);
+  background-color: lightgreen;
   border: 1px dashed black;
 }
 
@@ -99,12 +99,47 @@ main section:last-child .container .row {
   height: 500px;
   width: 60%;
   min-width: 400px;
-  background-color: skyblue;
+  background-color: lightskyblue;
 }
 
 .row .col-txt {
   height: 500px;
   width: 40%;
   min-width: 265px;
-  background-color: pink;
+  background-color: lightpink;
 }
+
+/* FOOTER */
+
+footer {
+  background-color: #23272A;
+  padding: 80px 0;
+}
+
+footer .container {
+  justify-content: space-between;
+}
+
+footer .container:first-child {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #5865F2;
+}
+
+footer .container:last-child {
+  margin-top: 30px;
+  background-color: lightcyan;
+}
+
+footer .container .col {
+  background-color: lightgoldenrodyellow;
+  flex-grow: 1;
+  height: 350px;
+  border: 1px dashed black;
+}
+
+footer .container .col:first-child {
+  background-color: lightseagreen;
+  flex-grow: 2;
+  border: 1px dashed black;
+}
+
