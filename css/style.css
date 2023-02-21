@@ -6,10 +6,6 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   width: 90%;
   max-width: 1180px;
   margin: 0 auto;
@@ -35,7 +31,9 @@ header {
 }
 
 header .container{
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   background-color: lightsalmon;
 }
@@ -59,17 +57,23 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* MAIN */
-main section {
-  padding: 115px 0;
+/* JUMBOTRON */
+.jumbotron {
+  background-color: lightblue;
 }
 
-main section .jumbotron {
+.jumbotron .content
+{
+  background-color: lightcoral;
   height: 350px;
   width: 40%;
   min-width: 300px;
   margin: 0 auto;
-  background-color: lightcoral;
+}
+
+/* MAIN */
+main section , .jumbotron {
+  padding: 115px 0;
 }
 
 main section:nth-child(even) {
@@ -80,15 +84,18 @@ main section:nth-child(odd) {
   background-color: #F6F6F6;
 }
 
+main section .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 main section:nth-child(odd) .container {
   flex-wrap: wrap-reverse;
 }
 
-main section:first-child {
-  background-color: lightblue;
-}
-
-main section:last-child .container .row {
+main section:last-child .row {
   height: 300px;
   width: 100%;
   background-color: lightgreen;
@@ -117,7 +124,10 @@ footer {
 }
 
 footer .container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer .container:first-child {
